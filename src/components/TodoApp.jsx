@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react"
 import axios from 'axios'
 import Dashboard from "./Dashboard"
@@ -21,7 +20,20 @@ function TodoApp() {
 
   const hdlAdd = (newJob) => {
     axios.post(apiUrl,newJob).then(res=>{
-      console.log(res)
+      setTrigger(prv=>!prv)
+    })
+  }
+
+  const hdlEdit = (id, updatedJob) => {
+    axios.put(`${apiUrl}/${id}`, updatedJob)
+    .then(res => {
+      setTrigger(prv=>!prv)
+    })
+  }
+
+  const hdlDel = (id) => {
+    axios.delete(`${apiUrl}/${id}`)
+    .then(res => {
       setTrigger(prv=>!prv)
     })
   }
@@ -34,7 +46,7 @@ function TodoApp() {
     <div className="todo-app">
       <Dashboard task={data.length}/>
       <FormAddTodo hdlAdd={hdlAdd}/>
-      <TodoContainer todos={data}/>
+      <TodoContainer todos={data} hdlEdit={hdlEdit} hdlDel={hdlDel}/>
     </div>
   )
 }

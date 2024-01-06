@@ -30,14 +30,14 @@
   padding-inline: 8px ;
 }
 
-.form-add-todo {
+.form-add-todo, .todo-edit-form {
   background-color: gold;
   padding: 8px 16px;
   display: flex;
   gap: 2px;
 }
 
-.form-add-todo > input {
+.form-add-todo > input, .todo-edit-form > [type=text]{
   flex-grow : 8;
   font-size: large;
   padding: 4px 8px;
@@ -81,6 +81,7 @@
   cursor: pointer;
 }
 
-
-
-
+.job-done {
+  text-decoration: line-through;
+  color: silver;
+}

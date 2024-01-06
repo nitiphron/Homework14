@@ -1,13 +1,15 @@
-/* eslint-disable react/prop-types */
 function TodoItem(props) {
-  const {job} = props
+  const {job, setEditId, hdlDel} = props
+
+  const onDelete = () => {
+    if(confirm('Delete this item?')) { hdlDel(job.id) }
+  }
   return (
     <div className="todo-item">
-      
-      <p>{job.todo} </p>
+      <p className={job.completed ? 'job-done' : ''}>{job.todo} </p>
       <div className="btn-group">
-        <a>Edit</a>
-        <a>Delete</a>
+        <a onClick={()=>{setEditId(job.id)}}>Edit</a>
+        <a onClick={onDelete}>Delete</a>
       </div>
     </div>
   )

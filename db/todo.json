@@ -7,28 +7,24 @@
       "userId": 26
     },
     {
-      "id": 2,
       "todo": "Memorize the fifty states and their capitals",
       "completed": false,
-      "userId": 48
+      "id": 2
     },
     {
-      "id": 3,
-      "todo": "Watch a classic movie",
+      "todo": "Watch a drama movie",
       "completed": false,
-      "userId": 4
+      "id": 3
     },
     {
-      "id": 4,
       "todo": "Contribute code or a monetary donation to an open-source software project",
       "completed": false,
-      "userId": 48
+      "id": 4
     },
     {
-      "id": 5,
       "todo": "Solve a Rubik's cube",
       "completed": false,
-      "userId": 31
+      "id": 5
     },
     {
       "todo": "Learn HTML5",
@@ -38,42 +34,23 @@
     },
     {
       "todo": "Learn CSS",
-      "completed": false,
-      "userId": 1,
+      "completed": true,
       "id": 7
     },
     {
-      "id": 8
-    },
-    {
+      "todo": "Learn vite js",
       "id": 9
-    },
-    {
-      "todo": "Learn JSX",
-      "completed": false,
-      "user": 1,
-      "id": 10
-    },
-    {
-      "todo": "Learn React",
-      "completed": false,
-      "user": 1,
-      "id": 11
-    },
-    {
-      "todo": "Learn Node.js",
-      "completed": false,
-      "user": 1,
-      "id": 12
-    },
-    {
-      "id": 13
     },
     {
       "todo": "Learn Data structure",
       "completed": false,
       "user": 1,
       "id": 14
+    },
+    {
+      "todo": "Homework 14",
+      "completed": true,
+      "id": 15
     }
   ]
 }
